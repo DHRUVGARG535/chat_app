@@ -54,7 +54,7 @@ class _ChatMessageState extends State<ChatMessage> {
               );
             } else {
               return MessageBubble.first(
-                userImage: chatMessage['image_url'],
+                userImage: chatMessage['userImage'],
                 username: chatMessage['username'],
                 message: chatMessage['text'],
                 isMe: authenticatedUser.uid == currentMessageUserId,
